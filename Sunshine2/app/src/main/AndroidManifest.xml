@@ -26,6 +26,23 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mathai.alex.sunshine2.app.MainActivity" />
         </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mathai.alex.sunshine2.app.MainActivity" />
+        </activity>
+
+
+        <provider
+            android:authorities="com.mathai.alex.sunshine2.app"
+            android:name=".data.WeatherProvider"
+            android:enabled="true" />
+        
     </application>
 
 </manifest>
+
+
